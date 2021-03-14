@@ -17,5 +17,5 @@
     * [update your forked repo](https://gitbook.tw/chapters/github/syncing-a-fork.html)
 * become a collaborator:
   * someone who wants to participate the production of each notebook.
-  * create branches to work / pull requests / peer review
+  * create branches to work -> pull requests -> peer review
   * solve issues / code review / write some latex to show deeper understading of an algorithm thru math
