@@ -10,7 +10,7 @@
   * open Discussions to share your opinions.
 
 * become a contributor:
-  * someone who might occasionally propose some possible improvements. (with actual code)
+  * someone who might occasionally propose some possible improvements. (with actual code / mathematical derivation)
   * Fork -> Pull requests
   * checkout the following mini tutorials:
     * [Fork / Pull requests](https://gitbook.tw/chapters/github/pull-request.html)
