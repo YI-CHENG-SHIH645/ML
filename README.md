@@ -1,6 +1,6 @@
 # ML in Business practice
 
-### The textbook: [Machine Learning in Business](http://www-2.rotman.utoronto.ca/~hull/Second%20edition%20Online%20Files/index2ndEd.html)
+### The textbook: [Machine Learning in Business (John Hull)](http://www-2.rotman.utoronto.ca/~hull/Second%20edition%20Online%20Files/index2ndEd.html)
 
 ### How to contribute? 
 * without actually coding:
