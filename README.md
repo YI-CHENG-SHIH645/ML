@@ -18,4 +18,5 @@
 * become a collaborator:
   * someone who wants to participate the production of each notebook.
   * create branches to work -> pull requests -> peer review
-  * solve issues / code review / write some latex to show deeper understading of an algorithm thru math
+  * solve issues / code review / write some latex 
+  * [git crash course](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
