@@ -5,7 +5,7 @@
 ### Every notebook has the "Open in Colab" button on top of page, you can run/modify/experiment in Colab as you like, without any settings.
 
 ### How to contribute? 
-* without actually coding:
+* without coding:
   * raise Issues if there's any bug in the code.
   * open Discussions to share your opinions.
 
