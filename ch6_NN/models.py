@@ -1,4 +1,5 @@
 from tensorflow.keras import Model
+from tensorflow.keras.layers import Dense
 
 
 class MultiLayerModel(Model):
