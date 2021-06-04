@@ -1,11 +1,12 @@
+from sklearn.model_selection import train_test_split
 from utils import DataLoader
 
 
 def fetch_iowa():
     cols = ['LotArea', 'OverallQual', 'OverallCond', 'SalePrice']
     data = DataLoader.load_data('iowa_original')[cols].values
-    x_train, y_train = data[:2000, :3], data[:2000, -1]
-    x_test, y_test = data[2000:, :3], data[2000:, -1]
+    x, y = data[:, :3], data[:, -1]
+    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.33)
 
     return (x_train, x_test), (y_train, y_test)
 
