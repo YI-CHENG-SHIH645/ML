@@ -6,6 +6,8 @@ import os.path as osp
 from IPython.display import display_html
 from sklearn.metrics import confusion_matrix
 from urllib.request import urlretrieve
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 def read_excel_in_range(ch_path, fname, sheet_name, start_cell, end_cell):
@@ -21,6 +23,20 @@ def read_excel_in_range(ch_path, fname, sheet_name, start_cell, end_cell):
         data_rows.append(data_cols)
         
     return pd.DataFrame(data_rows[1:], columns=data_rows[0])
+
+
+def draw_corr_heatmap(cov_matrix, cols):
+    plt.figure(figsize=(6,6), facecolor='w')
+    sns.set(font_scale=1.2)
+    hm = sns.heatmap(cov_matrix,
+                     cmap='coolwarm',
+                     annot=True,
+                     square=True,
+                     fmt='.2f',
+                     yticklabels=cols,
+                     xticklabels=cols)
+    plt.tight_layout()
+    plt.show()
 
 
 def display_side_by_side(dfs, names=[]):
