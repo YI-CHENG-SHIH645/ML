@@ -39,19 +39,25 @@ def draw_corr_heatmap(cov_matrix, cols):
     plt.show()
 
 
-def display_side_by_side(dfs, names=[]):
+def display_side_by_side(dfs: list, names: list, descriptions: list):
     html_str = ''
     if names:
         html_str += ('<tr>' + 
                      ''.join(f'<td style="text-align:center">{name}</td>' for name in names) + 
                      '</tr>')
+
     html_str += ('<tr>' + 
                  ''.join(f'<td style="vertical-align:top"> {df.to_html()}</td>' 
                          for df in dfs) + 
                  '</tr>')
+
+    if descriptions:
+        html_str += ('<tr>' +
+                     ''.join(f'<td>{description}</td>' for description in descriptions) +
+                     '</tr>')
     html_str = f'<table>{html_str}</table>'
-    html_str = html_str.replace('table','table style="display:inline"')
-    display_html(html_str, raw=True)
+    html_str = html_str.replace('table', 'table style="display:inline"')
+    display_html((html_str, ), raw=True)
 
 
 def classifier_measurement_under_threshs(y_true, y_score, threshs: list):
