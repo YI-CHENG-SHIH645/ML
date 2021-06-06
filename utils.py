@@ -39,9 +39,11 @@ def draw_corr_heatmap(cov_matrix, cols):
     plt.show()
 
 
-def display_side_by_side(dfs: list, names: list, descriptions: list):
+def display_side_by_side(dfs: list, names=None, descriptions=None):
+    if names is None:
+        names = []
     html_str = ''
-    if names:
+    if names is not None:
         html_str += ('<tr>' + 
                      ''.join(f'<td style="text-align:center">{name}</td>' for name in names) + 
                      '</tr>')
@@ -51,7 +53,7 @@ def display_side_by_side(dfs: list, names: list, descriptions: list):
                          for df in dfs) + 
                  '</tr>')
 
-    if descriptions:
+    if descriptions is not None:
         html_str += ('<tr>' +
                      ''.join(f'<td>{description}</td>' for description in descriptions) +
                      '</tr>')
