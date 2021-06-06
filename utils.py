@@ -54,8 +54,8 @@ def display_side_by_side(dfs: list, names=None, descriptions=None):
                  '</tr>')
 
     if descriptions is not None:
-        html_str += ('<tr>' +
-                     ''.join(f'<br><td>{description}</td>' for description in descriptions) +
+        html_str += ('<br><tr>' +
+                     ''.join(f'<td>{description}</td>' for description in descriptions) +
                      '</tr>')
     html_str = f'<table>{html_str}</table>'
     html_str = html_str.replace('table', 'table style="display:inline"')
